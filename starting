@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="login-box.css" rel="stylesheet" type="text/css" />
+    <link href="/home/testexam/Desktop/backgrd.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8"/>
+    <title>AngularLoginPage</title>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/angular.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/angular-route.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/app.module.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/app.config.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/home/home.module.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/home/home.component.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/login/mainController.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/app/login/loginController.js"></script>
+    <script src="/home/testexam/Documents/AngularJsCode (copy)/js/angular-route.min.js"></script>
+    <link rel="stylesheet" href="/home/testexam/Documents/AngularJsCode (copy)/css/bootstrap.css">
+
+</head>
+<body>
+    
+<div ng-include="/home/testexam/Documents/AngularJsCode(copy)/js/app/login/login.template.html"></div>
+<div style="padding: 100px 0 0 250px;">
+
+
+<div id="login-box">
+
+<H2>Login</H2>
+
+ <div id="container">
+        <form>
+            <input type="text" name="username" placeholder="username" ng-model="user.name">
+        <input type="password" name="password" placeholder="password" ng-model="user.passwd">
+        <input type="submit" id="Login" class=" login loginmodal-submit" value="Login" ng-click="login(user)">
+        <center>
+               
+            
+                <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
+                
+            </div><!--/ lower-->
+        </form>
+       
+    </div><!--/ container-->
+
+</div>
+</div>
+<div ng-view></div>
+</body>
+</html>
